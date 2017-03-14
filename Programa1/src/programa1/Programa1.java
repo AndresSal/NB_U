@@ -17,7 +17,12 @@ public class Programa1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog(null,"Hola Mundo");
+        int opcion;
+        do{
+            JOptionPane.showMessageDialog(null,"Hola Mundo");
+            opcion=JOptionPane.showConfirmDialog(null,"Desea salir de aquí","Mensaje",JOptionPane.YES_NO_OPTION);            
+        }while(opcion==JOptionPane.NO_OPTION);
+        
     }
     
 }
